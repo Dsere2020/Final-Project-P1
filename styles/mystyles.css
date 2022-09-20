@@ -1,0 +1,293 @@
+*{
+    margin:0;
+    padding:0;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+body{
+    background-color: #5F6472;
+}
+header{
+    width: 100%;
+    height: 80px;
+    
+}
+.headerline{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.it1{
+    background-color: transparent;
+}
+.it2{
+    background-image: linear-gradient(to right, gray , rgb(58, 55, 55));
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+}
+.logo{
+    height: 40px;
+    width: 150px;
+    margin-left: 10px;
+    
+}
+.logo img{
+    height: 100%;
+    width: 100%;
+}
+.navbar-PC{
+    display: none;
+}
+.nav-menu-pc{
+    display: none;
+}
+nav ul li a{
+    color: #ffffff;
+    background-color: #5F6472;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 18px;
+}
+.navbar{
+    width: 100%;
+    height: 100%;
+    /* display: none; */
+}
+.nav-menu{
+    display: flex;
+    margin-right: 20px;
+    gap: 60px;
+}
+.nav-link{
+    transition: 0.7s ease;
+}
+.nav-link:hover{
+    color: #fcb900;    
+
+
+}
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out ;
+    transition: all 0.3s ease-in-out ;
+    color: #0CF25D;
+}
+.hamburger{
+    margin-left: 150px;
+    margin-top: 25px;
+    cursor:pointer;
+    height: 70px;
+    width:70px;
+    
+}
+
+
+.nav-menu{
+    margin-top: 10px;
+    margin-left: 20px;
+    position:absolute;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color:#5F6472;
+    width: 100%;
+    transition: 0.5s;
+}
+.nav-menu h2{
+    margin-left: 6px;
+    margin-bottom: 5px;
+    color: #979797
+    ;
+}
+.nav-item{
+    margin: 16px 0;
+    width: 60%;
+    background-color: #5F6472;
+    height: 40px;
+   
+}
+.nav-menu.active{
+    left: 0;
+
+}
+
+.bar{
+    display: flex;
+    flex-direction: column;
+    width: 50px;
+    height: 4px;
+    background-color: #000000;
+}
+.search-div{
+    border-radius: 1px solid black;
+    margin: 0 auto;
+    width: 80%;
+    margin-top: 20px;
+}
+.search-div input{
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    padding-left: 5px;
+    font-size: 24px;
+    border: 2px solid black;
+    padding: 5px;
+    
+}
+.bigDiv{
+    display: flex;
+    margin: 0 auto;
+    margin-top: 15px;
+    height: 800px;
+    width: 85%;
+    border-radius: 20px;
+    background-color:#2D3038    ;
+    margin-bottom: 20px;
+    flex-direction: column;
+}
+
+.amazonDiv{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.amazonDiv h2{
+    font-size: 35px;
+    color: #fff;
+}
+
+.p1{
+    font-size: 20px;
+    color: #979797;
+
+}
+.p2{
+    margin-top: 40px;
+    font-size: 20px;
+    color: #979797;
+
+}
+
+.inputDiv{
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 90%;
+    border-radius: 20px;
+    height: 50px;
+    
+}
+.inputDiv input{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    padding-left: 10px;
+    font-size: 20px;
+    border: none;
+    
+
+}
+.outNameDiv{
+    margin: 0 auto;
+    margin-top: 40px;
+}
+.outNameDiv p{
+    font-size: 20px ;
+    color: #979797;
+}
+.result{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 40px;
+    height: 70px;
+    width: 70px;
+    font-size: 40px;
+}
+.result p{
+    font-size: 40px;
+    color: #979797;
+}
+
+@media (min-width: 1440px){
+    .navbar{
+        display: none;
+    }
+    .search-div{
+        display: none;
+    }
+    .nav-menu-pc{
+        margin-top: 10px;
+        margin-left: 15px;
+        display: grid;
+        gap: 40px;
+    }
+    .bigH2{
+        font-size: 22px;
+        color: #979797
+        ;
+    }
+    .amazonDiv h2{
+        margin-left: 60px;
+    }
+    .p1{
+        margin-left: 60px;
+
+    }
+    .p2{
+        margin-left: 60px;
+    }
+    .inputDiv{
+        margin-left: 80px;
+        margin-top: 20px;
+        width: 300px;
+    }
+    
+    .bigDiv{
+        margin-left: 400px;
+        width: 75%;
+    }
+    
+    .outNameDiv{
+        margin-left: 80px;
+    }
+    .outNameDiv p{
+        font-size: 24px;
+
+    }
+    .result{
+        margin-left: 60px;
+        margin-top: 10px;
+
+    }
+
+    .nav-link{
+        background-color: inherit;
+    }
+    .nav-item-pc{
+        display: flex;
+        align-items: center;
+        width: 370px;
+        height: 30px;
+        position: relative;        
+    }
+    .nav-item-pc:hover{
+        cursor: pointer;
+        border-radius: 20px;
+        background-image: linear-gradient(to right, gray , rgb(58, 55, 55));
+    }
+
+
+}
